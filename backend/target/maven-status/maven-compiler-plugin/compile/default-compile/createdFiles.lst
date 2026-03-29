@@ -1,0 +1,7 @@
+com\quickbite\support\service\GeminiService.class
+com\quickbite\support\model\ChatMessage.class
+com\quickbite\support\QuickBiteSupportApplication.class
+com\quickbite\support\model\ChatRequest.class
+com\quickbite\support\controller\ChatController.class
+com\quickbite\support\model\ChatResponse.class
+com\quickbite\support\config\WebConfig.class

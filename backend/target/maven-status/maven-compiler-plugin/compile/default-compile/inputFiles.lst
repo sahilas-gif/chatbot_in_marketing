@@ -1,0 +1,7 @@
+D:\Chatbot_in_marketing\backend\src\main\java\com\quickbite\support\config\WebConfig.java
+D:\Chatbot_in_marketing\backend\src\main\java\com\quickbite\support\controller\ChatController.java
+D:\Chatbot_in_marketing\backend\src\main\java\com\quickbite\support\model\ChatMessage.java
+D:\Chatbot_in_marketing\backend\src\main\java\com\quickbite\support\model\ChatRequest.java
+D:\Chatbot_in_marketing\backend\src\main\java\com\quickbite\support\model\ChatResponse.java
+D:\Chatbot_in_marketing\backend\src\main\java\com\quickbite\support\QuickBiteSupportApplication.java
+D:\Chatbot_in_marketing\backend\src\main\java\com\quickbite\support\service\GeminiService.java
