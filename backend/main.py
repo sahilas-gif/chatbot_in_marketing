@@ -139,8 +139,14 @@ async def chat(request: ChatRequest):
         "contents": contents
     }
     
-    # Cascade models just like the Java version
-    model_cascade = [PRIMARY_MODEL, "gemini-2.5-flash", "gemini-2.0-flash", "gemini-flash-latest"]
+    # Cascade models using latest Gemini 3.1 and 2.0 series
+    model_cascade = [
+        PRIMARY_MODEL, 
+        "gemini-3.1-flash-lite", 
+        "gemini-3.1-flash", 
+        "gemini-2.0-flash", 
+        "gemini-1.5-flash"
+    ]
     unique_models = []
     for m in model_cascade:
         if m and m not in unique_models:
@@ -151,7 +157,7 @@ async def chat(request: ChatRequest):
         return {"success": True, "reply": reply}
     except Exception as e:
         print(f"Chat API Error: {str(e)}")
-        # Provide fallback error message identical to Java version
+        # Provide fallback error message
         return {
             "success": True, 
             "reply": f"⚠️ Gemini API Error: {str(e)}\n\nPlease try sending your message again."

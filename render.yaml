@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: quickbite-backend
+    env: python
+    region: singapore
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn main:app --workers 4 --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:$PORT
+    envVars:
+      - key: GEMINI_API_MODEL
+        value: gemini-3.1-flash-lite
+      - key: GEMINI_API_URL
+        value: https://generativelanguage.googleapis.com/v1beta/models
+      # The GEMINI_API_KEY is omitted from this file for security.
+      # You must add it securely in the Render dashboard after syncing.
