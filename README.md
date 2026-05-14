@@ -14,7 +14,7 @@ QuickBite AI is a full-stack, AI-powered customer support application designed f
 
 This project demonstrates my ability to integrate **Large Language Models (LLMs)** like the latest **Gemini 3.1 Flash-Lite** into modern web applications while ensuring high availability through intelligent backend design.
 
-## ✨ Key Features & Technical Highlights
+## Key Features & Technical Highlights
 
 - ** Infrastructure as Code (IaC):** Contains a declarative `render.yaml` for automated, one-click CI/CD deployments using enterprise-grade **Gunicorn** WSGI process managers instead of basic dev servers.
 - ** Context-Aware AI Agent:** Engineered robust system prompts for Google's Gemini 3.1 model to enforce strict behavioral guardrails, ensuring the AI remains empathetic, professional, and compliant with business rules.
